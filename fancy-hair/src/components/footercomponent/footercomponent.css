@@ -1,0 +1,122 @@
+/* Footer Styles */
+.footer {
+  background: linear-gradient(to bottom, white, rgb(0, 0, 0)), url('/public/40.png');
+  color: rgb(0, 0, 0);
+  padding: 2rem 1rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 3rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.footer img {
+  width: 50px;
+  height: auto;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  -webkit-text-stroke: 0.7px #ffffff;
+}
+
+.footer-description {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.footer-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  -webkit-text-stroke: 0.7px #ffffff;
+}
+
+.footer-links,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-contact li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+  color: rgb(247, 247, 247);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.footer-links a:hover {
+  color: #fbbf24;
+}
+
+.footer-contact li {
+  font-size: 0.875rem;
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #2d6a4f;
+  font-size: 0.875rem;
+  color: #e5e7eb;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns for Quick Links and Contact Us */
+    gap: 0;
+    text-align: center;
+  }
+
+  .footer-section:first-child {
+    display: none;
+  }
+
+  .footer-title {
+    font-size: 1.25rem;
+  }
+
+  .footer-subtitle {
+    font-size: 1rem;
+  }
+
+  .footer-description,
+  .footer-links a,
+  .footer-contact li {
+    font-size: 0.75rem;
+  }
+
+  .footer-links,
+  .footer-contact {
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,155 @@
+.hero-section {
+  position: relative;
+  color: rgba(3, 49, 5, 0.986);
+  height: 80vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to top, white, rgba(255, 255, 255, 0) 100%), 
+    url('/public/saloon.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.hero-content {
+  position: relative;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  gap: 1rem;
+  text-align: center;
+  background-color: #f5f5f55b;
+  border-radius: 0%;
+}
+
+.title-container {
+  display: flex;
+  align-items:baseline;
+  gap: 10px;
+}
+
+.hero-title {
+  font-size: 3rem; 
+  font-weight: bold;
+}
+
+.hero-titlee {
+  font-size: 1.5rem; 
+  font-weight: bold;
+}
+
+.booking-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(3, 49, 5, 0.986);
+  padding-top: 2%;
+  padding-bottom: 4%;
+}
+
+.booking-title {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  background-color: rgba(3, 49, 5, 0.986);
+  padding-top:8px ;
+}
+
+.booking-form input,
+.booking-select,
+.booking-input {
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.158); 
+  border: 1px solid #ffffff;
+  border-radius: 0.25rem;
+  color: rgb(255, 255, 255);
+  font-size: 0.875rem;
+  max-width: 150px;
+  height: 38px; 
+}
+
+.booking-button {
+  background-color: rgba(235, 175, 11, 0.6); 
+  padding: 0.5rem 1rem; 
+  color: white;
+  font-weight: bold;
+  border-radius: 0.25rem;
+  border-color: #ffffff;
+  cursor: pointer;
+  font-size: 0.875rem;
+  height: 38px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-button:hover {
+  background-color: #d97706;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .title-container {
+    flex-direction: column;
+    gap: 0; 
+  }
+
+  .hero-title {
+    font-size: 2rem; 
+  }
+
+  .hero-titlee {
+    font-size: 1rem; 
+  }
+
+  .hero-content {
+    padding: 1.5rem 2rem;
+  }
+
+  .booking-form {
+    flex-direction: column; 
+    gap: 1rem; 
+    padding: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  .booking-title{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .booking-form input,
+  .booking-select,
+  .booking-input,
+  .booking-button {
+    width: 100%; 
+    max-width: none; 
+  }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1024px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-title2 {
+    font-size: 4rem;
+  }
+}

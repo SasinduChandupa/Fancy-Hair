@@ -1,0 +1,100 @@
+/* Reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 3rem;
+  background-color: #1e3a1f;
+  color: white;
+  position: relative;
+}
+
+/* Header Title */
+.header-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+/* Navigation Links */
+.header-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.header-link:hover {
+  color: #d1d5db;
+}
+
+/* Phone Number */
+.header-phone {
+  font-size: 0.875rem;
+}
+
+/* Hamburger Menu Button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: block; /* Show the hamburger menu button */
+  }
+
+  .header {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+  }
+
+  /* Hide nav links by default on mobile */
+  .header-nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: rgba(30, 58, 31, 0.95);
+      width: 200px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 10px 0;  /* Add padding to ensure space for links */
+      z-index: 1000;  /* Ensure it is on top */
+  }
+
+  .header-nav.open {
+      display: flex;
+  }
+
+  .header-link {
+      padding: 10px;
+      width: 100%;
+      color: white;
+      display: block;
+  }
+
+  .header-phone {
+      display: none;
+  }
+}

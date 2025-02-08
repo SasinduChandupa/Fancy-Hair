@@ -1,0 +1,108 @@
+/* ShoppingComponent.css */
+.shopping-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.shopping-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.shopping-list,
+.cart-list {
+    list-style: none;
+    padding: 0;
+}
+
+.shopping-item,
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size:large;
+}
+
+.item-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 0.1px solid rgba(0, 0, 0, 0.158);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.item-image:hover {
+    transform: scale(2);
+    position: absolute;
+    z-index: 10;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.add-to-cart,
+.remove-from-cart {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    background-color: #007bff;
+    color: white;
+    font-size:medium;
+}
+
+.add-to-cart:hover {
+    background-color: #04e73d;
+}
+
+.remove-from-cart {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.remove-from-cart:hover {
+    background-color: #cc0000;
+}
+
+.cart-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.empty-cart {
+    color: gray;
+    font-style: italic;
+    text-align: center;
+}
+
+.fees{
+    color: gray;
+    font-style: italic;
+    text-align: center;
+    font-size: small;
+}
+
+.total-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
