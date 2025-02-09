@@ -34,7 +34,7 @@ const Productcomponent = () => {
             <div className="service-text">
                 <h2>Our Products</h2>
                 <p>
-                    Discover the finest selection of beauty products at Liyo Salon, carefully curated to ensure you achieve salon-quality results at home. Our range includes top-tier brands and exclusive items that cater to all your hair, skin, and beauty needs. Each product is chosen for its superior quality and effectiveness, helping you maintain and enhance your natural beauty between visits.
+                    Discover the finest selection of beauty products at Fancy hair Salon, carefully curated to ensure you achieve salon-quality results at home. Our range includes top-tier brands and exclusive items that cater to all your hair, skin, and beauty needs. Each product is chosen for its superior quality and effectiveness, helping you maintain and enhance your natural beauty between visits.
                 </p>
             </div>
             <div className="service-image">
